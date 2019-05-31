@@ -14,14 +14,6 @@ const app = express();
 
   app.use(express.static(__dirname+ '/dist/insuredAngular'))
 
-  var userRoute = require('./Routes/usersRoutes.js');
-app.use(bodyparser.json());
-app.use('/api/users', userRoute);
-
-
-
-
-
 app.get('/*', function (req, res){
     res.sendFile(path.join(__dirname + '/dist/insuredAngular/index.html'))
 }
