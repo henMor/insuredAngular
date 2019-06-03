@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MyServerService {
 
-  baseurl='http://localhost:5000/api/users/';
+  baseurl='http://3.16.89.86:5000/api/users/';
   constructor(private http: HttpClient) {
     console.log('server constarctor');
    }
