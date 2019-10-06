@@ -3,11 +3,12 @@ import { HttpClient } from '@angular/common/http';
 import{ MyServerService } from '../../my-server.service';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-remove',
+  templateUrl: './remove.component.html',
+  styleUrls: ['./remove.component.css']
 })
-export class LoginComponent implements OnInit {
+
+export class RemoveComponent implements OnInit {
   username: String;
   password: String;
 
@@ -16,10 +17,10 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  
-  login(){
+
+  remove(){
     console.log(this.username);
-    this.server.loginUser({username: this.username, 
+    this.server.removeUser({username: this.username, 
       password: this.password}).
     subscribe(data=>{
       console.log(data);

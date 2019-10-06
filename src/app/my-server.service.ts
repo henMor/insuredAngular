@@ -21,7 +21,9 @@ export class MyServerService {
 
     }
 
-   removeUser(){
+   removeUser(data){
+
+    return this.http.post(this.baseurl + 'deleteClient', data)
 
    }
 
