@@ -23,7 +23,7 @@ export class MyServerService {
 
    removeUser(data){
 
-    return this.http.post(this.baseurl + 'removeClient', data)
+    return this.http.post(this.baseurl + 'removeUser', data)
 
    }
 

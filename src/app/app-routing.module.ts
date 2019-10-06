@@ -9,7 +9,7 @@ import { from } from 'rxjs';
 const routes: Routes = [
   {path: 'addUser', component: AddUserComponent},
   {path: 'loginUser', component: LoginComponent},
-  {path: 'deleteUser', component: RemoveComponent}
+  {path: 'removeUser', component: RemoveComponent}
 ];
 
 @NgModule({
