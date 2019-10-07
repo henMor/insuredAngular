@@ -27,6 +27,12 @@ export class MyServerService {
 
    }
 
+   showAllUsers(){
+    return this.http.get(this.baseurl + 'showAllUsers');
+
+
+
+   }
    updateUser(){
 
    }

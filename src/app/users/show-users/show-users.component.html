@@ -1,0 +1,15 @@
+<div>
+ 
+  
+  <br/>
+
+  <button (click)="showUsers()">Show all users</button>
+ </div>
+
+ <div>  
+  <table class="table">
+   <!--omitted code in between -->
+  <tr ng-repeat="book in library track by $index"> <!-- I tried track by $index and it didn't work-->   
+  <td>{{book.title}} </td>
+ </tr>
+ </div>

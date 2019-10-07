@@ -8,13 +8,16 @@ import { FormsModule} from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './users/login/login.component';
 import { RemoveComponent } from './users/remove/remove.component';
+import { ShowUsersComponent } from './users/show-users/show-users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddUserComponent,
     LoginComponent,
-    RemoveComponent
+    RemoveComponent,
+    UsersshowUsersComponent,
+    ShowUsersComponent
   ],
   imports: [
     BrowserModule,
