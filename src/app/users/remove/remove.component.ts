@@ -21,12 +21,7 @@ export class RemoveComponent implements OnInit {
   remove(){
     console.log(this.username);
     this.server.removeUser({username: this.username, 
-      password: this.password}).
-    subscribe(data=>{
-      console.log(data);
-    }, error=>{
-      console.log(error);
-    });
+      password: this.password});
   }
 
 }
