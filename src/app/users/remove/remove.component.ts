@@ -20,8 +20,7 @@ export class RemoveComponent implements OnInit {
 
   remove(){
     console.log(this.username);
-    this.server.removeUser({username: this.username, 
-      password: this.password});
+    this.server.removeUser({username: this.username});
   }
 
 }
