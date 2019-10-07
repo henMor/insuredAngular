@@ -10,7 +10,6 @@ import{ MyServerService } from '../../my-server.service';
 
 export class RemoveComponent implements OnInit {
   username: String;
-  password: String;
 
   constructor(private http: HttpClient, private server: MyServerService) { }
 
@@ -20,7 +19,12 @@ export class RemoveComponent implements OnInit {
 
   remove(){
     console.log(this.username);
-    this.server.removeUser({username: this.username});
+    this.server.removeUser({username: this.username}).
+    subscribe(data=>{
+      console.log(data);
+    }, error=>{
+      console.log(error);
+    });
   }
 
 }
