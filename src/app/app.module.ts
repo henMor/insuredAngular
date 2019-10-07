@@ -16,7 +16,6 @@ import { ShowUsersComponent } from './users/show-users/show-users.component';
     AddUserComponent,
     LoginComponent,
     RemoveComponent,
-    UsersshowUsersComponent,
     ShowUsersComponent
   ],
   imports: [
